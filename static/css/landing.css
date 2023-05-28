@@ -12,7 +12,7 @@ div.logo-container{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px 10px;
+    padding: 10px 10px;
     gap: 22px;  
     height: 100%;
 } 
@@ -33,5 +33,183 @@ h2.logo-name{
     flex: none;
     order: 1;
     flex-grow: 0;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+
+.home{
+    margin-top: 60px;
+
+    background: radial-gradient(50% 50% at 50% 50%, rgba(121, 163, 207, 0.91) 0%, rgba(16, 120, 183, 0.1) 100%);
+}
+.container-home{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.home-vid>img{
+    width: 100%;
+    margin: 0 auto;
 
 }
+.col-cont{
+    padding: 100px;
+
+}
+div.card{
+    overflow: hidden;
+    font-family: 'Raleway', sans-serif;
+}
+div.card-header {
+    color:#000000;
+    padding: 5px;
+}
+div.card-body{
+    padding: 10px;
+    text-align: left;
+    color: #000000;
+    font-size: 20px;
+
+    
+}
+.home-button{
+    width: 100%;
+    background: #0085FF;
+    box-shadow: 4px 8px 4px rgba(0, 0, 0, 0.25);
+    color: #000000;
+    padding: 0px;
+    text-align: center;
+    font-family: 'Lexend Deca', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+}
+.card>a{
+    text-decoration: none;
+}
+
+
+
+
+.benefits{
+    background: linear-gradient(180deg, #E7F1FF 0%, rgba(121, 163, 207, 0.72) 100%);
+}
+.col-benef1{
+    padding: 20px;
+}
+.container-benefits{
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+.card-benef-header{
+    color:#000000;
+    font-family: 'Lexend Deca', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+
+}
+.card-benef-body{
+
+    text-align: left;
+    padding: 10px 0px;
+    color: #000000;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-size: 25px;
+}
+.card-benef-img{
+   width: 100%;
+    text-align: center;
+}
+.col-benef1-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 25% 25% 25%;
+    background: rgba(16, 120, 183, 0.58);
+    box-shadow: 8px 12px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Raleway',sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+color: #FFFFFF;
+}
+.card2-benef{
+    text-align: left;
+    padding: 40px 30px;
+}
+.tools{
+    position: relative;
+    background: linear-gradient(180deg, rgba(121, 163, 207, 0.72) 0%, rgba(121, 163, 207, 0) 100%);
+    padding: 0px 40px;
+}
+.tools-title{
+    text-align: center;
+    font-family: 'Lexend Deca',sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 50px;
+}
+.carousel-1{
+    display: flex;
+    overflow: hidden;
+
+
+    
+    
+}
+.slide-1{
+    flex: 0 0 calc(100% / 3);
+    transition: transform 0.3s ease-in-out;
+}
+.slide-card{
+    background: #1078B7;
+box-shadow: 6px 9px 4px rgba(0, 0, 0, 0.25);
+color: #ffffff;
+font-family: 'Lexend Deca',sans-serif;
+font-style: normal;
+font-weight: 700;
+
+text-align: center;
+margin: 20px;
+
+}
+.slide-card>h3{
+    padding: 10px 0px;
+    font-size: 25px;
+}
+.slide-card>img{
+    width: 100%;
+    padding: 10px 20px;
+}
+.arrow {
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    padding: 10px;
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  
+.left-arrow {
+    left: 10px;
+  }
+  
+.right-arrow {
+    right: 10px;
+  }
+
+
+
+
