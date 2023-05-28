@@ -214,7 +214,91 @@ updateArrows();
 
         </script>
     </section>
+    <section class="reviews">
+      <div class="reviews-title">CONOCE LAS OPINIONES DE CIENTOS DE NUESTROS USUARIOS SATISFECHOS</div>
+      <div class="reviews-carousel">
+        <div class="slide-2">
+          <div class="slide-2-card">
+            <p>Estoy muy contento/a con mi experiencia utilizando este test vocacional. Me ayudó a comprender mejor mis habilidades y valores, y a descubrir posibles carreras que nunca había considerado antes. La retroalimentación que recibí fue muy clara y útil, y la inteligencia artificial utilizada en el test lo hizo sentir muy personalizado y adaptado a mis necesidades. También aprecié mucho la accesibilidad y facilidad de uso del test. En general, lo recomiendo encarecidamente a cualquiera que esté buscando descubrir su camino en el mundo laboral.</p>
+            <h3>Andrew Holguin</h3>
+          </div>
+        </div>
+        <div class="slide-2">
+          <div class="slide-2-card">
+            <p>sadqasdasfasfasfasfas</p>
+            <h3>2</h3>
+          </div>
+        </div>
+        <div class="slide-2">
+          <div class="slide-2-card">
+            <p>safasfsafsafasfasfasf</p>
+            <h3>3</h3>
+          </div>
+        </div>
+        <div class="slide-2">
+          <div class="slide-2-card">
+            <p>asfasfsafsaf</p>
+            <h3>4</h3>
+          </div>
+        </div>
+        <div class="arrow2 left-arrow2">&lt;</div>
+        <div class="arrow2 right-arrow2">&gt;</div>
+      </div>
+      <script>
+        var slides = Array.from(document.querySelectorAll('.slide-2'));
+        var rightArrow = document.querySelector('.right-arrow2');
+        var leftArrow = document.querySelector('.left-arrow2');
+        var slideWidth = slides[0].offsetWidth;
+        var currentIndex = 0;
+        function moveCarouselRight() {
+            if (currentIndex >= slides.length ) {
+            return;
+          } else {
+          currentIndex++;
+          if (currentIndex >= slides.length) {
+            currentIndex = slides.length - 1;
+          }
+          var translateXValue = -slideWidth * currentIndex;
+          slides.forEach(function (slide) {
+            slide.style.transform = `translateX(${translateXValue}px)`;
+          });
+          updateArrows();
+        }
+        }
+        function moveCarouselLeft() {
+            
+          currentIndex--;
+          if (currentIndex < 0) {
+            currentIndex = 0;
+          }
+          var translateXValue = -slideWidth * currentIndex;
+          slides.forEach(function (slide) {
+            slide.style.transform = `translateX(${translateXValue}px)`;
+          });
+          updateArrows();
+        }
+        
+        function updateArrows() {
+            
+         
+        
+          if (currentIndex === 0) {
+            leftArrow.disabled = true;
+          } else {
+            leftArrow.disabled = false;
+          }
+        }
+        
+        rightArrow.addEventListener('click', moveCarouselRight);
+        leftArrow.addEventListener('click', moveCarouselLeft);
+        updateArrows();
+        
+                </script>
+
+
+    </section>
     <footer id="footer">
+
 
     </footer>
 
