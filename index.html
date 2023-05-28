@@ -137,7 +137,7 @@
               </div>
               <div class="slide-1">
                 <div class="slide-card">
-                  <img src="imagen1.jpg" alt="Imagen 1">
+                  <img src="imagen1jpg" alt="Imagen 1">
                   <h3>Titulo 4</h3>
                 </div>
               </div>
@@ -164,54 +164,47 @@
     <div class="arrow left-arrow">&lt;</div>
     <div class="arrow right-arrow">&gt;</div>
         <script>
-var slides = Array.from(document.querySelectorAll('.slide-1'));
+var slides1 = Array.from(document.querySelectorAll('.slide-1'));
 var rightArrow = document.querySelector('.right-arrow');
 var leftArrow = document.querySelector('.left-arrow');
-var slideWidth = slides[0].offsetWidth;
-var currentIndex = 0;
+var slideWidth1 = slides1[0].offsetWidth;
+var currentIndex1 = 0;
 function moveCarouselRight() {
-    if (currentIndex >= slides.length - 3) {
+    if (currentIndex1 >= slides1.length - 3) {
     return;
   } else {
-  currentIndex++;
-  if (currentIndex >= slides.length) {
-    currentIndex = slides.length - 1;
+  currentIndex1++;
+  if (currentIndex1 >= slides1.length) {
+    currentIndex1 = slides1.length - 1;
   }
-  var translateXValue = -slideWidth * currentIndex;
-  slides.forEach(function (slide) {
+  var translateXValue = -slideWidth1 * currentIndex1;
+  slides1.forEach(function (slide) {
     slide.style.transform = `translateX(${translateXValue}px)`;
   });
   updateArrows();
 }
 }
-function moveCarouselLeft() {
-    
-  currentIndex--;
-  if (currentIndex < 0) {
-    currentIndex = 0;
+function moveCarouselLeft() { 
+  currentIndex1--;
+  if (currentIndex1 < 0) {
+    currentIndex1 = 0;
   }
-  var translateXValue = -slideWidth * currentIndex;
-  slides.forEach(function (slide) {
+  var translateXValue = -slideWidth1 * currentIndex1;
+  slides1.forEach(function (slide) {
     slide.style.transform = `translateX(${translateXValue}px)`;
   });
   updateArrows();
 }
-
 function updateArrows() {
-    
- 
-
-  if (currentIndex === 0) {
+  if (currentIndex1 === 0) {
     leftArrow.disabled = true;
   } else {
     leftArrow.disabled = false;
   }
 }
-
 rightArrow.addEventListener('click', moveCarouselRight);
 leftArrow.addEventListener('click', moveCarouselLeft);
 updateArrows();
-
         </script>
     </section>
     <section class="reviews">
@@ -246,8 +239,8 @@ updateArrows();
       </div>
       <script>
         var slides = Array.from(document.querySelectorAll('.slide-2'));
-        var rightArrow = document.querySelector('.right-arrow2');
-        var leftArrow = document.querySelector('.left-arrow2');
+        var rightArrow2 = document.querySelector('.right-arrow2');
+        var leftArrow2 = document.querySelector('.left-arrow2');
         var slideWidth = slides[0].offsetWidth;
         var currentIndex = 0;
         function moveCarouselRight() {
@@ -276,23 +269,17 @@ updateArrows();
             slide.style.transform = `translateX(${translateXValue}px)`;
           });
           updateArrows();
-        }
-        
+        }  
         function updateArrows() {
-            
-         
-        
           if (currentIndex === 0) {
-            leftArrow.disabled = true;
+            leftArrow2.disabled = true;
           } else {
-            leftArrow.disabled = false;
+            leftArrow2.disabled = false;
           }
         }
-        
-        rightArrow.addEventListener('click', moveCarouselRight);
-        leftArrow.addEventListener('click', moveCarouselLeft);
+        rightArrow2.addEventListener('click', moveCarouselRight);
+        leftArrow2.addEventListener('click', moveCarouselLeft);
         updateArrows();
-        
                 </script>
 
 
