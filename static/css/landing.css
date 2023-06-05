@@ -227,7 +227,7 @@ div.card-body{
     font-style: normal;
     font-size: 25px;
 }
-.card-benef-img{
+.card-benef-img>img{
    width: 100%;
     text-align: center;
 }
@@ -456,6 +456,48 @@ li.footer-item a{
         align-items: center;
         
     }
+    .container-home{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .col-cont {
+        padding: 0px;
+    }
+    .container-benefits {
+        display: flex;
+        flex-direction: column;
+    }
+    .carousel-1 {
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+    }
+    .arrow{
+        display:none;
+    }
+    
+    .reviews-title {
+
+        font-size: 20px;
+        line-height: 50px;
+
+    }
+    .reviews-carousel {
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+    }
+    .reviews {
+        position: relative;
+        padding: 0px 10px;
+    }
+    .arrow2{
+        display:none;
+    }
+
+
+
     /*
     .navbar.responsive ul{
         flex-direction: column;
