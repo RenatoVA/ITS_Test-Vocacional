@@ -128,7 +128,7 @@ div.language{
     flex-grow: 0;
 }
 div.language h2{
-    font-family: 'Lexend Deca';
+    font-family: 'Lexend Deca',sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 1rem;
