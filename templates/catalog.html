@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Universidades</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/catalog.css">
+    <link rel="shortcut icon" href="../static/img/logo.png">
+    <script src="https://kit.fontawesome.com/acb97cbc1a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="menu-header">
+        <nav class="navbar navmain navbar-expand-lg " data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" style="font-family: 'Lexend Deca',sans-serif;font-weight: 700;">
+                    <img src="../static/img/logo.png" alt="Logo" width="50" height="50"
+                        class="d-inline-block align-text-center">
+                    Test Orientacíón Vocacional Peruana
+                </a>
+                <button class=" navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active fa-solid fa-globe " aria-current="page" href="#"
+                                style="color: black;"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: black;">ES</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="../static/img/user-icon.png" alt="Logo" width="30" height="30"
+                                    class="d-inline-block align-text-top">
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">Perfil</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Cerrar Sesion</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="catalogo">
+        <br>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-3 catalog-menu text-start p-3">
+                    <h4>Catálogo de Universidades</h4>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+        <nav class="nav justify-content-center">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col">
+
+                    </div>
+                    <div class="col-9">
+                        <div class="d-flex" role="search">
+                            <input class="form-control me-3" type="search" placeholder="Ingresa el nombre de la universidad" aria-label="Search">
+                            <button class="btn btn-outline-primary me-3" type="submit">Buscar</button>
+                            <button class="btn btn btn-outline-info" type="submit">Localización</button>
+                        </div>
+
+                    </div>
+                    <div class="col">
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-10">
+                    <div class="row row-cols-1 row-cols-md-3 g-4 Universidades">
+                        <div class="col">
+                            <div class="card h-100" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="../static/img/UPC_logo.png" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body" style=" background-color: #9CB9DB;" style=" background-color: #9CB9DB;">
+                                            <h5 class="card-title">UPC</h5>
+                                            <h6 class="card-subtitle mb-2 text-body-secondary">Descripción:</h6>
+                                            <p class="card-text">
+                                                <small class="text-body-secondary">
+                                                    Es una universidad privada en Lima, Perú, que cuenta con amplias
+                                                    instalaciones...
+                                                </small>
+
+                                                <!-- Descripción:<br>
+                                                Es una universidad privada en Lima, Perú, que cuenta con amplias instalaciones y servicios
+                                                 para apoyar la educación y el desarrollo integral de sus estudiantes<br>
+                                                Ubicación: Prolongación Primavera 2390, Santiago de Surco 15023 -->
+                                            </p>
+                                            <h6 class="card-subtitle mb-2 text-body-secondary">Ubicación:</h6>
+                                            <p class="card-text">
+                                                <small class="text-body-secondary">
+                                                    Prolongación Primavera 2390, Santiago de Surco 15023
+                                                </small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="../static/img/URP_logo.png" class="img-fluid rounded-start"
+                                            alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body" style=" background-color: #9CB9DB;" style=" background-color: #9CB9DB;">
+                                            <h5 class="card-title">URP</h5>
+                                            <h6 class="card-subtitle mb-2 text-body-secondary">Descripción:</h6>
+                                            <p class="card-text">
+                                                <small class="text-body-secondary">
+                                                    Es una universidad privada del Perú que cuentan con aulas y
+                                                    laboratorios...
+                                                </small>
+
+                                                <!-- Descripción:<br>
+                                                Es una universidad privada del Perú que cuentan con aulas y laboratorios
+                                                equipados con tecnología
+                                                de última generación para ofrecer una educación de calidad. Además,
+                                                cuenta con un auditorio para eventos
+                                                y presentaciones importantes.<br>
+                                                Ubicación: 33, Av. Alfredo Benavides 5440, Santiago de Surco 15039 -->
+                                            </p>
+                                            <h6 class="card-subtitle mb-2 text-body-secondary">Ubicación:</h6>
+                                            <p class="card-text">
+                                                <small class="text-body-secondary">
+                                                    33, Av. Alfredo Benavides 5440, Santiago de Surco 15039
+                                                </small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="../static/img/UTP_logo.png" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body" style=" background-color: #9CB9DB;" style=" background-color: #9CB9DB;">
+                                            <h5 class="card-title">UTP</h5>
+                                            <h6 class="card-subtitle mb-2 text-body-secondary">Descripción:</h6>
+                                            <p class="card-text">
+                                                <small class="text-body-secondary">
+                                                    Es una universidad privada en Lima, Perú, que cuenta con modernas
+                                                    instalaciones...
+                                                </small>
+
+                                                <!-- Descripción:<br>
+                                                Es una universidad privada en Lima, Perú, que cuenta con modernas
+                                                instalaciones educativas
+                                                y una amplia variedad de programas académicos en diferentes áreas. <br>
+                                                Ubicación: 33, Av. Alfredo Benavides 5440, Santiago de Surco 15039 -->
+                                            </p>
+                                            <h6 class="card-subtitle mb-2 text-body-secondary">Ubicación:</h6>
+                                            <p class="card-text">
+                                                <small class="text-body-secondary">
+                                                    33, Av. Alfredo Benavides 5440, Santiago de Surco 15039
+                                                </small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="../static/img/UTEC_logo.png" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body" style=" background-color: #9CB9DB;">
+                                            <h5 class="card-title">UTEC</h5>
+                                            <h6 class="card-subtitle mb-2 text-body-secondary">Descripción:</h6>
+                                            <p class="card-text">
+                                                <small class="text-body-secondary">
+                                                    Es una universidad privada en lima, Perú, cuenta con una estructura
+                                                    única...
+                                                </small>
+
+                                                <!-- Descripción:<br>
+                                                Es una universidad privada en lima, Perú, cuenta con una estructura
+                                                única
+                                                y una amplia variedad de instalaciones educativas, incluyendo aulas y
+                                                laboratorios equipados con tecnología de última generación.<br>
+                                                Ubicación: Jr. Medrano Silva 165, Barranco 15047 -->
+                                            </p>
+                                            <h6 class="card-subtitle mb-2 text-body-secondary">Ubicación:</h6>
+                                            <p class="card-text">
+                                                <small class="text-body-secondary">
+                                                    Jr. Medrano Silva 165, Barranco 15047
+                                                </small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="../static/img/ESAN_logo.jpg" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body" style=" background-color: #9CB9DB;">
+                                            <h5 class="card-title">Universidad ESAN</h5>
+                                            <h6 class="card-subtitle mb-2 text-body-secondary">Descripción:</h6>
+                                            <p class="card-text">
+                                                <small class="text-body-secondary">
+                                                    Es una universidad privada en Lima, Perú, que cuenta con modernas
+                                                    instalaciones...
+                                                </small>
+
+                                                <!-- Descripción:<br>
+                                                Es una universidad privada en Lima, Perú, que cuenta con modernas
+                                                instalaciones
+                                                educativas y una amplia variedad de programas académicos en diferentes
+                                                áreas de
+                                                negocios, economía y finanzas.<br>
+                                                Ubicación: Jr. Alonso de Molina 1652, Santiago de Surco 15023 -->
+                                            </p>
+                                            <h6 class="card-subtitle mb-2 text-body-secondary">Ubicación:</h6>
+                                            <p class="card-text">
+                                                <small class="text-body-secondary">
+                                                    Jr. Alonso de Molina 1652, Santiago de Surco 15023
+                                                </small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="../static/img/USIL_logo.png" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body" style=" background-color: #9CB9DB;">
+                                            <h5 class="card-title">USIL</h5>
+                                            <h6 class="card-subtitle mb-2 text-body-secondary">Descripción:</h6>
+                                            <p class="card-text">
+                                                <small class="text-body-secondary">
+                                                    Es una universidad privada en Lima, Perú, ofrece una amplia variedad
+                                                    de programas...
+                                                </small>
+
+                                                <!-- Descripción:<br>
+                                                    Es una universidad privada en Lima, Perú, ofrece una amplia variedad de
+                                                    programas de pregrado
+                                                    y posgrado en diferentes áreas, como negocios, ingeniería, ciencias de
+                                                    la salud y turismo.<br>
+                                                    Ubicación: Av. la Fontana 550, La Molina 15024 -->
+                                            </p>
+                                            <h6 class="card-subtitle mb-2 text-body-secondary">Ubicación:</h6>
+                                            <p class="card-text">
+                                                <small class="text-body-secondary">
+                                                    Av. la Fontana 550, La Molina 15024
+                                                </small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+        <br>
+    </section>
+    <footer class="footer">
+        <div class="container-fluid" style="background: #1078B7;">
+            <div class="row">
+                <div class="col">
+                    <h2 class="text-explore">ITS</h2>
+                    <h3 class="text-explore">Innovation in technology for society</h3>
+                    <p class="text-explore">© ITS, 2023. Todos los derechos reservados</p>
+                </div>
+                <div class="col">
+                    <h3 class="text-explore">EXPLORA</h3>
+                    <ul class="ul-footer">
+                        <li class="footer-item">
+                            <a href="#">Inicio
+                            </a>
+                        </li>
+                        <li class="footer-item"><a href="#">Nosotros</a></li>
+                        <li class="footer-item"><a href="#">Contáctanos</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3 class="text-ayuda">¿NECESITAS AYUDA?</h3>
+                    <ul class="ul-footer">
+                        <li class="footer-item"><a href="#">Olvide mi contraseña</a></li>
+                        <li class="footer-item"><a href="#">Olvide mi contraseña</a></li>
+                        <li class="footer-item"><a href="#">Olvide mi contraseña</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3 class="text-legal">LEGAL</h3>
+                    <ul class="ul-footer">
+                        <li class="footer-item"><a href="#">Terminos y condiciones</a></li>
+                        <li class="footer-item"><a href="#">Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3 class="text-contactanos"> CONTACTANOS </h3>
+                    <ul class="ul-footer">
+                        <li class="footer-item"><a>Test.Peruana@gmail.com</a></li>
+                        <li class="footer-item"><a>+51 987 654 321</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+.navmain{
+    background: linear-gradient(180deg, #1078B7 0%, rgba(0, 159, 255, 0.54) 99.99%, rgba(16, 120, 183, 0) 100%);
+}
+.nav-item{
+    display:flex;
+    align-items: center;
+}
+.img-fluid{
+    min-width: 100%;
+    min-height: 100%;
+}
+.footer .col>h3{
+    font-family: 'Lexend Deca',sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.footer-item>a{
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Lexend Deca',sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 25px;
+}
