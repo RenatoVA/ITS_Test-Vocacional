@@ -12,11 +12,11 @@
     <script src="https://kit.fontawesome.com/acb97cbc1a.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class=""style="background: linear-gradient(180deg, #E7F1FF 0%, rgba(121, 163, 207, 0.72) 100%);">
     <header class="menu-header">
         <nav class="navbar navmain navbar-expand-lg " data-bs-theme="dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#" style="font-family: 'Lexend Deca',sans-serif;font-weight: 700;">
+                <a class="navbar-brand" href="../index.html" style="font-family: 'Lexend Deca',sans-serif;font-weight: 700;">
                     <img src="../static/img/logo.png" alt="Logo" width="50" height="50"
                         class="d-inline-block align-text-center">
                 Test Orientacíón Vocacional Peruana
@@ -55,7 +55,7 @@
             </div>
         </nav>
     </header>
-    <section class="test-vocacional">
+    <section class="test-vocacional" id="test-voc">
         <div class="container">
             <div class="row test border my-3">
                 <div class="col-3 test-menu bg-white text-start p-3" style="border-radius: 20px;">
@@ -88,7 +88,7 @@
                             trabajos o profesiones se adaptan mejor a ti.
                             Este examen consta de <span class="fw-bold">60</span> preguntas</p>
                         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                            <button class="btn cprimary font-lex iniciar-test text-light">Iniciar Test</button>
+                            <button class="btn cprimary font-lex text-light" type="button" onclick="TestAjax('test-voc','tabla.html');">Iniciar Test</button>
                         </div>
                     </div>
                 </div>
@@ -96,7 +96,7 @@
 
         </div>
     </section>
-    <footer class="footer">
+    <footer class="footer mt-5">
         <div class="container-fluid" style="background: #1078B7;">
             <div class="row">
                 <div class="col">
@@ -146,6 +146,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+    <script src="../static/js/ajax.js"></script>
 </body>
 
 </html>
