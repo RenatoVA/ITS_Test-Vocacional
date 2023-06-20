@@ -9,8 +9,9 @@
     background: linear-gradient(180deg, #E7F1FF 0%, rgba(121, 163, 207, 0.72) 100%);
 }
 .comparativa{
-    background: linear-gradient(180deg, #1078B7 0%, #68B7E7 100%);
-
+    background: linear-gradient(180deg, #1078B7 0%, #68B7E7 41.67%);
+    font-weight: bold;
+    color: #D9D9D9;
 }
 .valor{
     background: #D9D9D9;

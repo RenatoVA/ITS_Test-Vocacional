@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+        <script src="https://kit.fontawesome.com/acb97cbc1a.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #DEE7F3;
+            margin: 0;
+            padding: 0;
+        }
+
+        .cuerpo_principal_container {
+            /* background-color: lightcoral; */
+        }
+
+        .superior_container {
+            /* background-color: lightgreen; */
+        }
+
+        .logo {
+            height: auto;
+            width: 300px;
+        }
+
+        .texto_container {
+            background-color: #FFFFFF;
+            width: 70%;
+        }
+
+        .texto {
+            /* background-color: lightskyblue; */
+        }
+
+        .contenido_medio_container {
+            /* background-color: lightgoldenrodyellow; */
+        }
+
+        .separador {
+            background-color: #7793CF;
+            height: 8px;
+        }
+
+        .informacion_container {
+            background-color: #FFFFFF;
+        }
+
+        .informacion {
+            /* background-color: lightsalmon; */
+        }
+
+        .masPadding {
+            padding-right: 150px;
+        }
+
+        .barra-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .barra-info-accion {
+            color: black;
+            text-decoration: none;
+        }
+
+        .barra-info-accion:hover {
+            text-decoration: none;
+        }
+
+        .barra-info-accion.clickeado {
+            color: red;
+            background-color: inherit;
+        }
+
+        @media screen and (min-width: 900px) {
+            .carousel-inner {
+                display: flex;
+            }
+
+            .carousel-item {
+                display: block;
+                margin-right: 0;
+                flex: 0 0 calc(100%/2);
+            }
+        }
+
+        .carousel-inner {
+            padding: 1em;
+        }
+
+        .card {
+            margin: 0 .5em;
+            border-radius: 0;
+            box-shadow: 2px 6px 8px 0 rgb(22, 22, 26, .18);
+            height: 100%;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 6vh;
+            height: 6vh;
+            background-color: black;
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .carousel-control-prev:hover,
+        .carousel-control-next:hover {
+            opacity: .8;
+        }
+
+        .body-card-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .card-icon {
+            background-color: #d50000;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 90px;
+        }
+
+        .img-logo {
+            width: 100%;
+            height: auto;
+            padding: 15px;
+        }
+
+        .download-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .red-color {
+            background-color: red;
+        }
+
+        .tipo-ingreso-div.clickeando {
+            background-color: #d50000;
+            color: white;
+        }
+
+        .activo-div {
+            background-color: #d50000;
+            color: white;
+        }
+
+        .tipo-ingreso-container {
+            height: 100%;
+        }
+
+        .barra-info-tipo-ingreso {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .square {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            margin-right: 10px;
+            text-align: center;
+        }
+        .navmain{
+    background: linear-gradient(180deg, #1078B7 0%, rgba(0, 159, 255, 0.54) 99.99%, rgba(16, 120, 183, 0) 100%);
+}
+.nav-item{
+    display:flex;
+    align-items: center;
+}
+.footer .col>h3{
+    font-family: 'Lexend Deca',sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.footer-item>a{
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Lexend Deca',sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 25px;
+}
+.test-vocacional{
+    display:flex;
+    flex-direction: column;
+    margin: 20px; 
+}
+
+.description{
+    margin: 20px 30px;
+    border-radius: 20px;
+    padding: 10px;
+}
+.test-vocacional .test{
+    background: rgba(16, 120, 183, 0.58);
+box-shadow: 8px 12px 4px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+height:600px;
+}
+
+.p_2{
+    margin-top:10px;
+}
+
+.cprimary{
+    background: rgba(16, 120, 183, 0.58);
+}
+.font-rale{
+    font-family: 'Raleway',sans-serif;
+}
+.font-lex{
+    font-family: 'Lexend Deca',sans-serif;
+}
+@media screen and (max-width:750px){
+    .container-fluid>a{
+        font-size: 10px;
+    }
+    .test-vocacional .test{
+        display:flex;
+        flex-direction: column;
+        height:auto;
+        width: auto;
+    }
+    .test-d{
+        width: 100%;    
+    }
+    .description{
+        margin: 0px;
+    }
+    .test-menu{
+        display:none;
+    }
+    .test-vocacional{
+        margin:20px 10px;
+    }
+}
+    </style>
+</head>
+<body>
+    <header class="menu-header">
+        <nav class="navbar navmain navbar-expand-lg " data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html" style="font-family: 'Lexend Deca',sans-serif;font-weight: 700;">
+                    <img src="../static/img/logo.png" alt="Logo" width="50" height="50"
+                        class="d-inline-block align-text-center">
+                    Test Orientacíón Vocacional Peruana
+                </a>
+                <button class=" navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active fa-solid fa-globe " aria-current="page" href="#"
+                                style="color: black;"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: black;">ES</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="../static/img/user-icon.png" alt="Logo" width="30" height="30"
+                                    class="d-inline-block align-text-top">
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">Perfil</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Cerrar Sesion</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="cuerpo_principal_container m-2 p-4">
+        <div class="superior_container d-flex flex-wrap justify-content-center">
+            <div class="logo_container me-5">
+                <img src="../static/img/upcLogo2.png" alt="logo UPC" class="logo" >
+            </div>
+            <div class="texto_container m-4 p-5 d-flex align-items-center">
+                <div class="texto">
+                    <p class="fs-4">La UPC es una universidad líder en Perú que ofrece una educación de alta calidad y
+                        se enfoca en
+                        formar líderes innovadores y emprendedores capaces de aportar al desarrollo sostenible del país.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenido_medio_container my-3 mx-5">
+            <div class="separador mx-5"></div>
+
+            <div class="barra-info my-1 mx-5" id="list-tab" role="tablist">
+                <div class="p-3 px-5 masPadding">
+                    <a class="barra-info-accion active fs-4" id="admision" data-bs-toggle="list" href="#Admision"
+                        role="tab" aria-controls="admision">Admision</a>
+                </div>
+                <div class="p-3 px-5">
+                    <a class="barra-info-accion fs-4" id="beneficio" data-bs-toggle="list" href="#Beneficio" role="tab"
+                        aria-controls="beneficio">Beneficio</a>
+                </div>
+
+                <div class="p-3 px-5">
+                    <a class="barra-info-accion fs-4" id="carrera" data-bs-toggle="list" href="#Carrera" role="tab"
+                        aria-controls="carrera">Carrera</a>
+                </div>
+
+                <div class="p-3 px-5">
+                    <a class="barra-info-accion fs-4" id="contacto" data-bs-toggle="list" href="#Contacto" role="tab"
+                        aria-controls="contacto">Contacto</a>
+                </div>
+            </div>
+
+            <div class="separador mx-5"></div>
+        </div>
+
+
+        <div class="containercuerpo_inferior_container mx-5 my-4">
+            <div class="informacion_container mx-5 p-3 tab-content" id="nav-tabContent">
+                <!-- Aqui se esta llamando por ajax el contenido de la pagina -->
+                <div class="informacion tab-pane fade show active" id="Admision" role="tabpanel"
+                    aria-labelledby="admision">
+                    <p class="fs-4">
+                    <p class="fs-1 m-4 text-danger fw-bold" style="font-family: zizou-slab-bold">Estudia con Libertad
+                        UPC</p><br>
+                    <div class="fs-3 mx-4" style="font-family:Helvetica Neue">
+                        <p class="">En la UPC tendrás la libertad de elegir llevar tus cursos de forma presencial o
+                            virtual.
+                            Elige tu combinación ideal en cada ciclo con la más alta calidad académica, lo mejores
+                            espacios para
+                            estudiar y nuestra reconocida experiencia digital.</p>
+                        <p class="my-1">¡Aprovecha la flexibilidad que solo te ofrece la UPC!</p>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <div>
+                        <p class="fs-1 m-4 text-danger fw-bold" style="font-family: zizou-slab-bold">Conoce las
+                            modalidades de estudio
+                            de Libertad UPC</p>
+                        <!-- 4:3 aspect ratio -->
+                        <div class="ratio ratio-16x9 m-4" style="width: 50%; height: 50%;">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/5vEr_-48b3o"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <br>
+                        <br>
+
+                        <div>
+                            <p class="fs-1 m-4 text-danger fw-bold" style="font-family: zizou-slab-bold">¿Por qué UPC?
+                            </p>
+                        </div>
+
+                        <!-- CARUSEL -->
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div id="carouselExampleControls" class="carousel" data-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <div class="body-card-icon">
+                                                            <div class="card-icon">
+                                                                <img loading="lazy"
+                                                                    src="https://www.upc.edu.pe/admision/images/webp/flexibilidad_sslpat.webp"
+                                                                    class="img-logo img-fluid logo-flexibilidad"
+                                                                    alt="Flexibilidad para elegir cómo llevar tus cursos con la misma exigencia y calidad académica">
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="card-title d50 text-danger text-center"> Flexibilidad
+                                                            para elegir
+                                                            cómo
+                                                            llevar tus
+                                                            cursos con la misma exigencia y calidad académica
+                                                        </h5>
+                                                        <div class="card-text text-center">
+                                                            <p>
+                                                                Aplican restricciones según carrera
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <div class="body-card-icon">
+                                                            <div class="card-icon">
+                                                                <img loading="lazy"
+                                                                    src="https://www.upc.edu.pe/admision/images/internacionalidad.svg"
+                                                                    class="img-logo img-fluid logo-flexibilidad"
+                                                                    alt="Internacionalidad  en la UPC que cuenta con más de 250 convenios internacionales">
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="card-title d50 text-danger text-center">
+                                                            LA UPC ES LA N°1 EN INTERNACIONALIDAD POR 8VO AÑO
+                                                            CONSECUTIVO Y CUENTA CON
+                                                            MÁS
+                                                            DE 250 CONVENIOS INTERNACIONALES
+                                                        </h5>
+                                                        <div class="card-text text-center">
+                                                            <p>
+                                                                Fuente: Ranking las Mejores Universidades del Perú 2014
+                                                                al 2021 de la
+                                                                revista América Economía
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <div class="body-card-icon">
+                                                            <div class="card-icon">
+                                                                <img loading="lazy"
+                                                                    src="https://www.upc.edu.pe/admision/images/egresados-trabajan.svg"
+                                                                    class="img-logo img-fluid logo-flexibilidad"
+                                                                    alt="8 de cada 10 egresados de la UPC trabajan">
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="card-title d50 text-danger text-center">
+                                                            8 de cada 10 egresados de la UPC trabaja y el 95% lo hace en
+                                                            una actividad
+                                                            de la
+                                                            carrera que estudió
+                                                        </h5>
+                                                        <div class="card-text text-center">
+                                                            <p>
+                                                                Fuente: Estudio Empleabilidad Egresados UPC IPSOS Perú
+                                                                2021
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <div class="body-card-icon">
+                                                            <div class="card-icon">
+                                                                <img loading="lazy"
+                                                                    src="https://www.upc.edu.pe/admision/images/carreras.svg"
+                                                                    class="img-logo img-fluid logo-flexibilidad"
+                                                                    alt="La UPC es la universidad con el mayor número de Carreras con mejores sueldos">
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="card-title d50 text-danger text-center">
+                                                            La UPC es la universidad con el mayor número de Carreras con
+                                                            mejores sueldos
+                                                        </h5>
+                                                        <div class="card-text text-center">
+                                                            <p>
+                                                                Fuente: Portal Ponte en Carrera 2021.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <div class="body-card-icon">
+                                                            <div class="card-icon">
+                                                                <img loading="lazy"
+                                                                    src="https://www.upc.edu.pe/admision/images/empleo.svg"
+                                                                    class="img-logo img-fluid logo-flexibilidad"
+                                                                    alt="Los egresados de la UPC demoran en promedio 1.9 meses en encontrar empleo al finalizar sus estudios">
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="card-title d50 text-danger text-center">
+                                                            LOS EGRESADOS DE LA UPC DEMORAN EN PROMEDIO 1.9 MESES EN
+                                                            ENCONTRAR EMPLEO AL
+                                                            FINALIZAR SUS
+                                                            ESTUDIOS.
+                                                        </h5>
+                                                        <div class="card-text text-center">
+                                                            <p>
+                                                                Fuente: Estudio Empleabilidad Egresados UPC - IPSOS Perú
+                                                                2020
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                                            data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                                            data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- CARUSEL END -->
+
+                        <div class="download-btn my-4">
+                            <p class="fs-3" style="font-family:Helvetica Neue">Descubre todo lo que la UPC tiene para
+                                ti.</p>
+
+                            <a href="https://www.upc.edu.pe/static/pdf/brochure-upc-2022.pdf"
+                                class="btn bg-danger text-white btn-lg active fs-3" role="button" aria-pressed="true"
+                                target="_blank">Descarga
+                                aqui el Brocure</a>
+                        </div>
+
+                        <br>
+                        <br>
+
+                        <div>
+                            <p class="fs-1 m-4 text-danger fw-bold" style="font-family: zizou-slab-bold">Tipos de
+                                Ingreso UPC</p>
+                        </div>
+                        <div class="fs-3 mx-4" style="font-family:Helvetica Neue">
+                            <p class="">Descubre el tipo de ingreso que mejor se adecúa a ti y conoce cómo postular a la
+                                UPC.
+                            </p>
+                        </div>
+
+                        <div class="border" style="">
+
+                            <div class="text-center">
+
+                                <div class="barra-info-tipo-ingreso" id="list-tab" role="tablist">
+                                    <div class="active activo-div fs-4 p-3 masPadding border border-top-0 tipo-ingreso-div"
+                                        id="regular" data-bs-toggle="list" href="#Regular" role="button"
+                                        aria-controls="regular" style="">
+                                        ADMISIÓN REGULAR
+                                    </div>
+                                    <div class="fs-4 p-3 border border-top-0 tipo-ingreso-div" id="preferente"
+                                        data-bs-toggle="list" href="#Preferente" role="button"
+                                        aria-controls="preferente" style="">
+                                        ADMISIÓN SELECCIÓN
+                                        PREFERENTE
+                                    </div>
+
+                                    <div class="fs-4 p-3 border border-top-0 tipo-ingreso-div" id="medicina"
+                                        data-bs-toggle="list" href="#Medicina" role="button" aria-controls="medicina"
+                                        style="">
+                                        ADMISIÓN MEDICINA
+                                    </div>
+
+                                    <div class="fs-4 p-3 border border-top-0 tipo-ingreso-div" id="traslado"
+                                        data-bs-toggle="list" href="#Traslado" role="button" aria-controls="traslado"
+                                        style="">
+                                        TRASLADO EXTERNO
+                                    </div>
+
+                                    <div class="fs-4 p-3 border border-top-0 tipo-ingreso-div" id="convenios"
+                                        data-bs-toggle="list" href="#Convenios" role="button" aria-controls="convenios"
+                                        style="">
+                                        CONVENIOS INTERNACIONALES
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="tipo-ingreso-container mx-5 my-4">
+                                <div class="mx-5 p-3 tab-content" id="nav-tabContent">
+
+                                    <div class="tab-pane fade show active" id="Regular" role="tabpanel"
+                                        aria-labelledby="regular">
+                                        <div class="d-flex justify-content-around">
+                                            <div class="">
+                                                <img loading="lazy"
+                                                    src="https://www.upc.edu.pe/admision/images/admision-regular.svg"
+                                                    class=""
+                                                    alt="La UPC es la universidad con el mayor número de Carreras con mejores sueldos">
+                                            </div>
+
+                                            <div class="" style="margin-left: 100px;">
+                                                <h5 class="fs-4 p-4">
+                                                    Este tipo de ingreso está dirigido a quienes estén cursando el
+                                                    quinto año de
+                                                    secundaria
+                                                    o ya
+                                                    culminaron el colegio.
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="Preferente" role="tabpanel"
+                                        aria-labelledby="preferente">
+                                        <div class="d-flex justify-content-around">
+                                            <div class="" style="width: 200px;">
+                                                <img loading="lazy"
+                                                    src="https://www.upc.edu.pe/admision/images/admision-seleccion-preferente.svg"
+                                                    class="img-logo img-fluid logo-flexibilidad"
+                                                    alt="La UPC es la universidad con el mayor número de Carreras con mejores sueldos">
+                                            </div>
+
+                                            <div class="" style="margin-left: 100px;">
+                                                <h5 class="fs-4 p-4">
+                                                    Si fuiste un alumno destacado en 3.°,4.° y 5.° de secundaria y has
+                                                    pertenecido al tercio superior o has logrado un promedio de 15 o
+                                                    más, este
+                                                    es tu tipo de ingreso.
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="Medicina" role="tabpanel" aria-labelledby="medicina">
+                                        <div class="d-flex justify-content-around">
+                                            <div class="" style="width: 200px;">
+                                                <img loading="lazy"
+                                                    src="https://www.upc.edu.pe/admision/images/doctor.png"
+                                                    class="img-logo img-fluid logo-flexibilidad"
+                                                    alt="La UPC es la universidad con el mayor número de Carreras con mejores sueldos">
+                                            </div>
+
+                                            <div class="" style="margin-left: 100px;">
+                                                <h5 class="fs-4 p-4">
+                                                    ¡Si tu meta es salvar vidas, estudia Medicina en UPC!
+                                                    <br><br><br>
+                                                    Tienes dos rutas de ingreso para iniciar clases en Marzo 2024.
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="Traslado" role="tabpanel" aria-labelledby="traslado">
+                                        <div class="d-flex justify-content-around">
+                                            <div class="" style="width: 200px;">
+                                                <img loading="lazy"
+                                                    src="https://www.upc.edu.pe/admision/images/traslado-externo.svg"
+                                                    class="img-logo img-fluid logo-flexibilidad"
+                                                    alt="La UPC es la universidad con el mayor número de Carreras con mejores sueldos">
+                                            </div>
+
+                                            <div class="" style="margin-left: 100px;">
+                                                <h5 class="fs-4 p-4">
+                                                    Dirigido a los alumnos que desean postular a la UPC y que ya
+                                                    realizaron
+                                                    parte de sus estudios en otras universidades.
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="Convenios" role="tabpanel"
+                                        aria-labelledby="convenios">
+                                        <div class="d-flex justify-content-around">
+                                            <div class="" style="width: 200px;">
+                                                <img loading="lazy"
+                                                    src="https://www.upc.edu.pe/admision/images/convenios-internacionales.svg"
+                                                    class="img-logo img-fluid logo-flexibilidad"
+                                                    alt="La UPC es la universidad con el mayor número de Carreras con mejores sueldos">
+                                            </div>
+
+                                            <div class="" style="margin-left: 100px;">
+                                                <h5 class="fs-4 p-4">
+                                                    Si estás en el programa para la obtención del diploma de
+                                                    Bachillerato
+                                                    Internacional, este es el tipo de ingreso que te corresponde.
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-center">
+                                        <a href="https://www.upc.edu.pe/static/pdf/brochure-upc-2022.pdf"
+                                            class="btn text-danger btn-lg active fs-3" role="button" aria-pressed="true"
+                                            target="_blank">CONOCE MÁS</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="Beneficio" role="tabpanel" aria-labelledby="beneficio">
+                    <p class="fs-1 m-4 text-danger fw-bold ">Becas y financiamiento</p><br>
+                    <p class="fs-4 m-4 " style="font-family:Helvetica Neue">Comprometidos con una educación integral y
+                        al alcance de todos, te ofrecemos diversas alternativas de financiamiento y becas para estudiar
+                        en la UPC. ¡Que nada detenga tu aprendizaje, ya son más de 14 mil estudiantes beneficiados</p>
+                    <div class="square m-4 fs-4">
+                        <img src="https://www.upc.edu.pe/admision/images/becas-internas-postulantes.svg" alt="none"><br>
+                        <p>Becas Internas</p>
+                        <p>Postulantes</p>
+                    </div>
+                    <div class="square m-5 fs-4">
+                        <img src="https://www.upc.edu.pe/admision/images/becas-internas-alumnos.svg" alt=""><br>
+                        <p>Becas Internas</p>
+                        <p>Alumnos</p>
+                    </div>
+                    <div class="square m-5 fs-4">
+                        <img src="https://www.upc.edu.pe/admision/images/becas-externas-postulantes.svg" alt=""><br>
+                        <p>Becas externas</p>
+                        <p>Postulantes</p>
+                    </div>
+                    <div class="square m-5 fs-4">
+                        <img src="https://www.upc.edu.pe/admision/images/creditos-externos-alumnos.svg" alt=""><br>
+                        <p>Credito Externo</p>
+                        <p>Alumnos</p>
+                    </div>
+
+
+                </div>
+
+                <div class="tab-pane fade" id="Carrera" role="tabpanel" aria-labelledby="carrera" >
+
+                    <div style="display: flex; flex-direction: row;">
+                    <div class="card" style="width: 18rem;" >
+                        <img src="https://th.bing.com/th/id/OIP.dEruT0LB994Mjn-s4-gXWwHaEh?w=257&h=180&c=7&r=0&o=5&pid=1.7"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Computer Science</h5>
+                            <p class="card-text">La informática, o "computer science" en inglés, es el estudio de la
+                                información y la computación.</p>
+                            <a href="#" class="btn bg-danger text-white btn-lg active">Ver Mas</a>
+                        </div>
+                    </div>
+                  
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://th.bing.com/th/id/R.56f3de1d6e1310ce7be1f0712c11aabb?rik=pi%2fKT5RXlDByTQ&pid=ImgRaw&r=0"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Ingenieria de Software</h5>
+                                <p class="card-text">La ingeniería de software se enfoca en el desarrollo y mantenimiento de software de alta calidad para resolver problemas complejos.</p>
+                                <a href="#" class="btn bg-danger text-white btn-lg active">Ver Mas</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://americana.edu.co/barranquilla/wp-content/uploads/2019/01/sistemas-2018.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Ingenieria de Sistemas de la informacion</h5>
+                                <p class="card-text">Los sistemas de información se encargan de gestionar y optimizar la información en las organizaciones para mejorar la toma de decisiones y los procesos empresariales.</p>
+                                <a href="#" class="btn bg-danger text-white btn-lg active">Ver Mas</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="Contacto" role="tabpanel" aria-labelledby="contacto">
+                    <p class="fs-1 m-4 text-danger fw-bold">Elige cómo contactarte</p>
+                    <p class="fs-4 m-4 " style="font-family:Helvetica Neue">Déjanos tus datos y un asesor especializado
+                        resolverá tus dudas y te guiará durante el proceso de admisión. Si deseas contactarnos al
+                        momento, estos son los canales disponibles.</p>
+                    <img src="https://www.upc.edu.pe/admision/images/contact.svg" alt="">
+                    <p class="fs-4 m-4 " style="font-family:Helvetica Neue">(01)610-5030</p>
+                    <p class="fs-4 m-4 " style="font-family:Helvetica Neue">Horario de Atención - Call Center</p>
+                    <p class="fs-4 m-4 " style="font-family:Helvetica Neue">Lunes a viernes 8:00 am - 9:00 pm Sábados
+                        8:00 am - 7:00 pm</p>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer mt-5">
+        <div class="container-fluid" style="background: #1078B7;">
+            <div class="row">
+                <div class="col">
+                    <h2 class="text-explore">ITS</h2>
+                    <h3 class="text-explore">Innovation in technology for society</h3>
+                    <p class="text-explore">© ITS, 2023. Todos los derechos reservados</p>
+                </div>
+                <div class="col">
+                    <h3 class="text-explore">EXPLORA</h3>
+                    <ul class="ul-footer">
+                        <li class="footer-item">
+                            <a href="#">Inicio
+                            </a>
+                        </li>
+                        <li class="footer-item"><a href="#">Nosotros</a></li>
+                        <li class="footer-item"><a href="#">Contáctanos</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3 class="text-ayuda">¿NECESITAS AYUDA?</h3>
+                    <ul class="ul-footer">
+                        <li class="footer-item"><a href="#">Olvide mi contraseña</a></li>
+                        <li class="footer-item"><a href="#">Olvide mi contraseña</a></li>
+                        <li class="footer-item"><a href="#">Olvide mi contraseña</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3 class="text-legal">LEGAL</h3>
+                    <ul class="ul-footer">
+                        <li class="footer-item"><a href="#">Terminos y condiciones</a></li>
+                        <li class="footer-item"><a href="#">Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3 class="text-contactanos"> CONTACTANOS </h3>
+                    <ul class="ul-footer">
+                        <li class="footer-item"><a>Test.Peruana@gmail.com</a></li>
+                        <li class="footer-item"><a>+51 987 654 321</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+
+    <script>
+        var links = document.getElementsByClassName("barra-info-accion");
+
+        for (var i = 0; i < links.length; i++) {
+            links[i].addEventListener("click", function () {
+
+                for (var j = 0; j < links.length; j++) {
+                    links[j].classList.remove("clickeado");
+                }
+
+                this.classList.add("clickeado");
+            });
+        }
+
+        var links_ingreso_div = document.getElementsByClassName("tipo-ingreso-div");
+
+        for (var i = 0; i < links_ingreso_div.length; i++) {
+            links_ingreso_div[i].addEventListener("click", function () {
+                for (var j = 0; j < links_ingreso_div.length; j++) {
+                    links_ingreso_div[j].classList.remove("clickeando");
+                    links_ingreso_div[j].style.color = "black";
+                    links_ingreso_div[j].style.backgroundColor = "white";
+                }
+                this.classList.add("clickeando");
+                this.style.color = "white";
+                this.style.backgroundColor = "#d50000";
+            });
+        }
+
+        const multipleItemCarousel = document.querySelector('#carouselExampleControls');
+
+        if (window.matchMedia("(min-width:900px)").matches) {
+            const carousel = new bootstrap.Carousel(multipleItemCarousel, {
+                interval: false,
+            })
+            var carouselWidth = $('.carousel-inner')[0].scrollWidth;
+            var cardWidth = $('.carousel-item').width();
+
+            var scrollPosition = 0;
+
+            $('.carousel-control-next').on('click', function () {
+                if (scrollPosition < (carouselWidth - (cardWidth * 3))) {
+                    console.log('next');
+                    scrollPosition = scrollPosition + cardWidth;
+                    $('.carousel-inner').animate({ scrollLeft: scrollPosition }, 600);
+                }
+            });
+
+            $('.carousel-control-prev').on('click', function () {
+                if (scrollPosition > 0) {
+                    console.log('prev');
+                    scrollPosition = scrollPosition - cardWidth;
+                    $('.carousel-inner').animate({ scrollLeft: scrollPosition }, 600);
+                }
+            });
+        }
+        else {
+            $(multipleItemCarousel).addClass('slide');
+        }
+    </script>
+
+    
+</body>
+
+</html>
