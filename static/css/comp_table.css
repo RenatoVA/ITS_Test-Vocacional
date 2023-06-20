@@ -48,6 +48,11 @@
         display: none;
     }
 }
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
 .footer .col>h3{
     font-family: 'Lexend Deca',sans-serif;
     font-size: 1.2rem;
