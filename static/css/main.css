@@ -35,6 +35,9 @@ box-shadow: 8px 12px 4px rgba(0, 0, 0, 0.25);
 border-radius: 20px;
 height:600px;
 }
+.p{
+    font-family: 'Raleway',sans-serif;
+}
 
 .p_2{
     margin-top:10px;
@@ -48,6 +51,18 @@ height:600px;
 }
 .font-lex{
     font-family: 'Lexend Deca',sans-serif;
+}
+.vertical-line {
+    width: 1px;
+    height: 30px; 
+    background-color: #000;
+    margin: 0 20px; 
+  }
+.forum-descripcion{
+    height:250px;
+}
+.searchbar{
+    display:none;
 }
 @media screen and (max-width:750px){
     .container-fluid>a{
@@ -71,5 +86,37 @@ height:600px;
     .test-vocacional{
         margin:20px 10px;
     }
-    
+    .searchbar1{
+        display:none;
+    }
+    .forumcard{
+        padding: 10px !important;
+    }
+    .forumcard>div{
+        font-size: 10px;
+    }
+    .forumtext{
+        display:none;
+    }
+    .forum-descripcion{
+        height:150px;
+    }
+    .searchbar{
+        display:block;
+    }
+    .forumsidebar{
+        display: none;
+    }
+    .forummain{
+        width: 100%;
+    }
+    .navfalse{
+        display: none;
+    }
+    .topforum{
+        width: 100%;
+    }
+    .forummenuprin{
+        display: none !important;
+    }
 }
