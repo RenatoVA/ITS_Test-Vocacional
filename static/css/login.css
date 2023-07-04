@@ -1,0 +1,162 @@
+
+body{
+    background: #DEE7F3;
+    font-family: 'Raleway',sans-serif;
+    display:flex;
+    flex-direction: column;
+}
+.header{
+    display:flex;
+    align-content: center;
+    justify-content: center;
+
+}
+.img-logo{
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    width: 7rem;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.container-login{
+
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 380px;
+    height: 760px;
+
+}
+.login-right{
+    box-sizing: border-box;
+    background: #FFFFFF;
+border-width: 0px 2px;
+border-style:hidden;
+border-color: #000000;
+border-radius: 10px;
+margin-left: -10px;
+margin-right: -10px;
+}
+label{
+    display:inline-block;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    padding: 18px 15px 0 15px;
+}
+input{
+    background: #DEE7F3;
+    border-radius: 1px;
+    border: #000000;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding-left: 15px;
+}
+.login-center{
+    border-bottom: 1px solid #373b43;
+    padding: 10px 0;
+    margin: -10px 0 24px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.login-center>span{
+    background-color: #ffffff;
+    padding: 0 10px;
+    display: block;
+    margin-bottom: -22px;
+}
+.form-group2{
+    padding: 10px 0px;
+    text-align: center;
+}
+.login-h1{
+    font-family: 'Lexend Deca',sans-serif;
+    padding:10px 0px;
+}
+.btn-google{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+    background: #DBE7F9;
+border-radius: 10px;
+border: none;
+}
+.btn-facebook{
+    writing-mode: horizontal-tb;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+    background: #DBE7F9;
+    border-radius: 10px;
+border: none;
+
+
+}
+
+.btn-twitter{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+    background: #DBE7F9;
+border-radius: 10px;
+border: none; 
+}
+.btn-twitter:hover, .btn-facebook:hover, .btn-google:hover{
+    background: #a8bddb;
+}
+.btn-twitter>span{
+    width: 34px;
+    height: 34px;
+    background: url(../img/twitter-logo.png);
+    background-size:cover;
+    margin-right: 8px;
+}
+.btn-facebook>span{
+    width: 34px;
+    height: 34px;
+    background: url(../img/facebook-logo.png);
+    background-size: cover;
+    margin-right: 8px;
+
+}
+.btn-google>span{
+    width: 34px;
+    height: 34px;
+    background: url(../img/google-logo.png);
+    background-size: cover;
+    margin-right: 8px;
+}
+.btn-login{
+    background: #7793CF;
+border-radius: 10px;
+border: none;
+}
+.btn-login:hover{
+    background: #375fbd;
+}
+.btn-login>span{
+    font-family: 'Lexend Deca',sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 32px;
+}
+.link-recuperar-contraseña{
+    margin-bottom:10px;
+}
+@media (max-width: 539px){
+.main .container {
+    max-width: 100%;
+}
+.main{
+    max-width: 100%;
+}
+}

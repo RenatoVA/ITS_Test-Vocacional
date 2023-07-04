@@ -1,0 +1,91 @@
+<div class=" py-5 bg-light">
+    <div class="container" id="admision">
+        <h2 class="mb-1 font-lex fs-1">Modalidades de admision</h2>
+        <p class="font-rale"> La Universidad Peruana de Ciencias Aplicadas cuenta con diversas modalidades de admision, a continuación se muestran estas modalidades</p>
+        <hr>
+        <div class="row" >
+            <div class="col-lg-4 mb-3">
+                <div class="card box-shadow h-100 border rounded-lg shadow">
+                    <div class="card-img-top d-flex mx-auto mt-2 justify-content-center"><img src="../static/img/svg/admision-regular.svg" class="d-block" alt="..."> </div>
+                    <div class="card-body">
+                        <h5 class="card-title font-lex fw-bold text-center">ADMISIÓN REGULAR</h5>
+                        <p class="card-text font-rale">Este tipo de ingreso está dirigido a quienes estén cursando el quinto año de secundaria o ya culminaron el colegio.</p>
+                    </div>
+                    <div class="card-footer border-0 bg-white">
+                        <a href="#" class="btn btn-outline-primary font-rale">Conoce más</a>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg-4 mb-3">
+                    <div class="card box-shadow h-100 border rounded-lg shadow">
+                        <div class="card-img-top  d-flex mx-auto mt-2 justify-content-center"><img src="../static/img/svg/admision-seleccion-preferente.svg" class="d-block" alt="..."> </div>
+                        <div class="card-body">
+                            <h5 class="card-title font-lex fw-bold text-center">ADMISIÓN SELECCIÓN PREFERENTE</h5>
+                            <p class="card-text font-rale">Si fuiste un alumno destacado en 3.°,4.° y 5.° de secundaria y has pertenecido al tercio superior o has logrado un promedio de 15 o más, este es tu tipo de ingreso.</p>
+                        </div>
+                        <div class="card-footer border-0 bg-white" >
+                            <a href="#" class="btn btn-outline-primary font-rale">Conoce más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3">
+                    <div class="card box-shadow h-100 border rounded-lg shadow">
+                        <div class="card-img-top  d-flex mx-auto mt-2 justify-content-center"><img src="../static/img/svg/doctor.png" class="d-block" alt="..." style="height: 64px;"> </div>
+                        <div class="card-body">
+                            <h5 class="card-title font-lex fw-bold text-center">ADMISIÓN MEDICINA</h5>
+                            <p class="card-text font-rale">¡Si tu meta es salvar vidas, estudia Medicina en UPC! Tienes dos rutas de ingreso para iniciar clases en Marzo 2024..</p>
+                        </div>
+                        <div class="card-footer border-0 bg-white">
+                            <a href="#" class="btn btn-outline-primary font-rale">Conoce más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-3">
+                    <div class="card box-shadow h-100 border rounded-lg shadow">
+                        <div class="card-img-top d-flex mx-auto mt-2 justify-content-center"><img src="../static/img/svg/traslado-externo.svg" class="d-block" alt="..."> </div>
+                        <div class="card-body">
+                            <h5 class="card-title font-lex fw-bold text-center">TRASLADO EXTERNO</h5>
+                            <p class="card-text font-rale">Dirigido a los alumnos que desean postular a la UPC y que ya realizaron parte de sus estudios en otras universidades.</p>
+                        </div>
+                        <div class="card-footer border-0 bg-white">
+                            <a href="#" class="btn btn-outline-primary font-rale">Conoce más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-3">
+                    <div class="card box-shadow h-100 border rounded-lg shadow">
+                        <div class="card-img-top d-flex mx-auto mt-2 justify-content-center"><img src="../static/img/svg/convenios-internacionales.svg" class="d-block" alt="..."> </div>
+                        <div class="card-body">
+                            <h5 class="card-title font-lex fw-bold text-center">ADMISIÓN REGULAR</h5>
+                            <p class="card-text font-rale">Si estás en el programa para la obtención del diploma de Bachillerato Internacional, este es el tipo de ingreso que te corresponde.
+                            </p>
+                        </div>
+                        <div class="card-footer border-0 bg-white">
+                            <a href="#" class="btn btn-outline-primary font-rale">Conoce más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <h2 class="mb-1 font-lex fs-1">Modalidades de estudio</h2>
+        <p class="font-rale"> La Universidad Peruana de Ciencias Aplicadas cuenta con diversas modalidades de estudio, a continuación se muestran estas modalidades</p>
+        <hr>
+        <div class="row">
+            <div class="btn-group rounded-0" role="group" aria-label="Radio toggle button group">
+                <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1" autocomplete="off" onclick="htmlModalidades('admision/presencial.html')">
+                <label class="btn btn-outline-danger" for="vbtn-radio1">Presencial</label>
+                <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio2" autocomplete="off" onclick="htmlModalidades('admision/semipresencial.html')">
+                <label class="btn btn-outline-danger" for="vbtn-radio2">Semipresencial</label>
+                <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio3" autocomplete="off" onclick="htmlModalidades('admision/virtual.html')">
+                <label class="btn btn-outline-danger" for="vbtn-radio3">Virtual</label>
+            </div>
+            <div id="modalidades"></div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .card-img-top {
+    width: 85%;
+    object-fit: cover;
+}
+</style>

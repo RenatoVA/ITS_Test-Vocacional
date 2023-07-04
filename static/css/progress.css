@@ -1,0 +1,19 @@
+.progress-bar-wrapper {
+    width: 100%;
+    height: 20px;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background-color: #3DB6E4 ; 
+  }
+
+  .test-column {
+    width: 20%; 
+  }
+  .test-vocacional .table-responsive {
+    max-width: 95%; 
+    margin: 0 auto; 
+  }
+  
+  

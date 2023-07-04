@@ -1,0 +1,122 @@
+.navmain{
+    background: linear-gradient(180deg, #1078B7 0%, rgba(0, 159, 255, 0.54) 99.99%, rgba(16, 120, 183, 0) 100%);
+}
+.nav-item{
+    display:flex;
+    align-items: center;
+}
+.footer .col>h3{
+    font-family: 'Lexend Deca',sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.footer-item>a{
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Lexend Deca',sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 25px;
+}
+.test-vocacional{
+    display:flex;
+    flex-direction: column;
+    margin: 20px; 
+}
+
+.description{
+    margin: 20px 30px;
+    border-radius: 20px;
+    padding: 10px;
+}
+.test-vocacional .test{
+    background: rgba(16, 120, 183, 0.58);
+box-shadow: 8px 12px 4px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+height:600px;
+}
+.p{
+    font-family: 'Raleway',sans-serif;
+}
+
+.p_2{
+    margin-top:10px;
+}
+
+.cprimary{
+    background: rgba(16, 120, 183, 0.58);
+}
+.font-rale{
+    font-family: 'Raleway',sans-serif;
+}
+.font-lex{
+    font-family: 'Lexend Deca',sans-serif;
+}
+.vertical-line {
+    width: 1px;
+    height: 30px; 
+    background-color: #000;
+    margin: 0 20px; 
+  }
+.forum-descripcion{
+    height:250px;
+}
+.searchbar{
+    display:none;
+}
+@media screen and (max-width:750px){
+    .container-fluid>a{
+        font-size: 18px;
+    }
+    .test-vocacional .test{
+        display:flex;
+        flex-direction: column;
+        height:auto;
+        width: auto;
+    }
+    .test-d{
+        width: 100%;    
+    }
+    .description{
+        margin: 10px;
+    }
+    .test-menu{
+        display:none;
+    }
+    .test-vocacional{
+        margin:20px 10px;
+    }
+    .searchbar1{
+        display:none;
+    }
+    .forumcard{
+        padding: 10px !important;
+    }
+    .forumcard>div{
+        font-size: 10px;
+    }
+    .forumtext{
+        display:none;
+    }
+    .forum-descripcion{
+        height:150px;
+    }
+    .searchbar{
+        display:block;
+    }
+    .forumsidebar{
+        display: none;
+    }
+    .forummain{
+        width: 100%;
+    }
+    .navfalse{
+        display: none;
+    }
+    .topforum{
+        width: 100%;
+    }
+    .forummenuprin{
+        display: none !important;
+    }
+}
